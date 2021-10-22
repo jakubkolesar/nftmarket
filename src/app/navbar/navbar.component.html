@@ -1,0 +1,33 @@
+<head>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+</head>
+<nav>
+    <div class="content">
+        <div class="logo">
+            <img src="../../assets/images/navbar-logo.png" alt="logo">
+        </div>
+        <input type="text" placeholder="&#xF002;    Search" style="font-family:'Poppins', FontAwesome" />
+        <ul id="navbar" class="menu" [class]="isClicked? 'menu-active':'none'" (click)="hideOnClick()">
+                <li routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }"><a routerLink="">Dashboard</a></li>
+                <li routerLinkActive="active"><a routerLink="/market">Market</a></li>
+                <li><a href="#">Messages</a></li>
+                <li><a href="#">Profile</a></li>
+        </ul>
+        <div class="section">
+            <div class="icon searchicon">
+                <i class="fas fa-search"></i>
+            </div>
+            <div class="icon">
+                <i class="fas fa-bell"></i>
+            </div>
+            <div class="deposit">
+                <p>+Deposit</p>
+            </div>
+            <div class="burger" (click)="onClick()">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </div>
+    </div>
+</nav>

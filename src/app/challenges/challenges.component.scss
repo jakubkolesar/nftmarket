@@ -1,0 +1,67 @@
+
+h1 {
+    font-family: Poppins;
+    color: white;
+    font-weight: 700;
+    font-size: 32px;
+}
+.wrapper {
+    margin-top: 3%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.card {
+    background-color: #000000;
+    height: 391px;
+    border-radius: 10px;
+    background-image:url('../../assets/images/separ.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 48%;
+}
+.card {
+    display: flex;
+    .card-content {
+        line-height: 27px;
+        width: 70%;
+        height: 100%;
+        padding: 7%;
+        display: flex;
+        flex-direction: column;
+        margin: auto 0;
+        justify-content: space-evenly;
+    }
+    p{
+        font-family: Poppins;
+        color:white;
+        font-weight: 400;
+        font-size: 18px;
+    }
+    .button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: transparent;
+        border: 2px solid #1CFFFF;
+        box-sizing: border-box;
+        border-radius: 5px;
+        width: 210px;
+        height: 60px;
+        cursor: pointer;
+        &:hover {
+            background-color: #1CFFFF;
+            h1{
+                color: #333333;
+            }
+        }
+        h1{
+            color: #1CFFFF;
+            font-weight: 700;
+            font-size: 18px;
+        }
+    }
+}
+.card1 {
+    background-image:url('../../assets/images/kontrafakt.png');
+}
