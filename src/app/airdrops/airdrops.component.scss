@@ -1,0 +1,142 @@
+.content{
+    margin-top: 5%;
+    width: 100%;
+    display: flex;
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    .leftcontent{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+    }
+    .title{
+        width: 80%;
+    }
+    h1{
+        font-family: Poppins;
+        font-weight: 800;
+        font-size: 48px;
+        color: #ffffff;
+    }
+    .info{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: flex-end;
+        position: relative;
+        .infoOverlay{
+            position: absolute;
+            width: 100%;
+            height: 80%;
+            border-radius: 10px;
+            background: rgba(18,18,18,0.8);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Poppins;
+            color: #ffffff;
+            font-weight: bold;
+            font-size: 38px;
+
+        }
+        .infocontent{
+            height: 80%;
+            line-height: 150%;
+            display: flex;
+            flex-direction: column;
+            font-family: Poppins;
+            color: white;
+            justify-content: space-between;
+            text-align: justify;
+            .boxes{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                height: 30%;
+                width: 100%;
+                background: rgba(35, 35, 35, 0.5);
+                border-radius: 10px;
+                .item{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    width: 32%;
+                    height: 100%;
+                    text-align: center;
+                    line-height: 150%;
+                    h1{
+                        font-size: 1.2rem;
+                    }
+                    p{
+                        font-family: Poppins;
+                        color: white;
+                    }
+                }
+            }
+            .progress{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: baseline;
+                width: 100%;
+                height: 70px;
+                p{
+                    font-weight: bold;
+                }
+                .ownership{
+                    display: flex;
+                }
+                .progressbar{
+                    display: flex;
+                    flex-direction: column;
+                    width: 60%;
+                    justify-content: center;
+                    text-align: center;
+                    .bar{
+                        width: 100%;
+                        height: 15px;
+                        border-radius: 30px;
+                        background: rgba(35, 35, 35, 0.5);
+                        position: relative;
+                        .smallbar{
+                            position: absolute;
+                            top: 50%;
+                            -ms-transform: translateY(-50%);
+                            transform: translateY(-50%);
+                            border-radius: 20px;
+                            background: radial-gradient(2319.67% 2745.15% at -23.61% 274.26%, #00A8F7 0%, #23FFFF 100%);
+                            width: 64%;
+                            height: 10px;
+                            margin-left: 4px;
+                        }
+                    }
+                }
+                .button {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background: transparent;
+                    background: radial-gradient(2319.67% 2745.15% at -23.61% 274.26%, #00A8F7 0%, #23FFFF 100%);
+                    box-sizing: border-box;
+                    border-radius: 5px;
+                    width: 170px;
+                    height: 60px;
+                    cursor: pointer;
+                    p{
+                        color: #333333;
+                    }
+                }
+            }
+        }
+    }
+}
+.right{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}

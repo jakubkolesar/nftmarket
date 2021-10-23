@@ -12,6 +12,9 @@ import { MarketComponent } from './market/market.component';
 import { ChallengesComponent } from './challenges/challenges.component';
 import { KeyfeaturesComponent } from './keyfeatures/keyfeatures.component';
 import { CollaborationComponent } from './collaboration/collaboration.component';
+import { AirdropsComponent } from './airdrops/airdrops.component';
+import { FollowComponent } from './follow/follow.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +26,10 @@ import { CollaborationComponent } from './collaboration/collaboration.component'
     MarketComponent,
     ChallengesComponent,
     KeyfeaturesComponent,
-    CollaborationComponent
+    CollaborationComponent,
+    AirdropsComponent,
+    FollowComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

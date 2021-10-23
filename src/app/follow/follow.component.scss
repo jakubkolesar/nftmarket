@@ -1,0 +1,31 @@
+.content {
+    margin-top: 7%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h1{
+    color: #ffffff;
+    font-family: Poppins;
+    font-weight: 800;
+    font-size: 64px;
+    text-align: center;
+}
+p{
+    text-align: center;
+    font-family: Poppins;
+    color: #ffffff;
+    font-weight: 800;
+    font-size: 24px;
+}
+.icons {
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+    padding: 4rem;
+}
+.download {
+    img {
+        padding: 30px 8px;
+    }
+}
