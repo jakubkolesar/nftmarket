@@ -43,7 +43,7 @@
 .text{
     margin : auto 0;
     width: 52%;
-    line-height: 149%;
+    line-height: 119%;
     h1 {
         font-family: Orbitron;
         font-weight: 700;
@@ -55,5 +55,32 @@
         font-weight: 400;
         font-size: 14px;
         color: #ffffff;
+    }
+}
+
+@media only screen and (max-width:760px) {
+    .row {
+        flex-direction: column;
+        padding: 0;
+    }
+    .card {
+        width: 100% !important;
+        margin-bottom: 2%;
+    }
+}
+@media only screen and (max-width:400px) {
+    .row {
+        flex-direction: row;
+        padding: 0;
+    }
+    .text {
+        display: none;
+    }
+    .image {
+        width: 100%;
+    }
+    .card {
+        width: 49% !important;
+        margin-bottom: 2%;
     }
 }

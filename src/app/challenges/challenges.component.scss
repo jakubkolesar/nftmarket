@@ -20,13 +20,17 @@ h1 {
     background-repeat: no-repeat;
     width: 48%;
 }
+.text {
+    height: 360px;
+    margin : auto 0;
+    padding: 0 0 0 40px;
+}
 .card {
     display: flex;
     .card-content {
         line-height: 27px;
         width: 70%;
         height: 100%;
-        padding: 7%;
         display: flex;
         flex-direction: column;
         margin: auto 0;
@@ -64,4 +68,39 @@ h1 {
 }
 .card1 {
     background-image:url('../../assets/images/kontrafakt.png');
+}
+@media only screen and (max-width: 1580px){
+    .card {
+        background-position: center;
+    }
+}
+@media only screen and (max-width: 1230px){
+    .card{
+        background-position: right;
+        
+    }
+    h1{
+        font-size: 22px !important;
+    }
+    p{
+        font-size: 14px !important;
+    }
+}
+
+@media only screen and (max-width: 760px){
+    .wrapper {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+    .text {
+        height: 250px;
+    }
+    .card {
+        margin : 10px 0;
+        width: 100%;
+        height: 70%;
+    }
+
+
 }

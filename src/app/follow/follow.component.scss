@@ -1,5 +1,5 @@
 .content {
-    margin-top: 7%;
+    margin: 7% 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -20,12 +20,32 @@ p{
 }
 .icons {
     display: flex;
-    width: 70%;
+    width: 80%;
     justify-content: space-between;
-    padding: 4rem;
+    padding: 10% 0;
 }
 .download {
     img {
-        padding: 30px 8px;
+        margin: 30px 8px;
+    }
+}
+@media only screen and (max-width:1420px) {
+    .icons {
+        width: 100%;
+    }
+}
+@media only screen and (max-width:630px) {
+    .icons {
+        width: 100%;
+        flex-wrap: wrap;
+        img{
+            width: 30px;
+            height: 30px;
+        }
+    }
+    .download{
+        img{
+            width: 120px;
+        }
     }
 }

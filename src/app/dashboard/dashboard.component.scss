@@ -60,3 +60,44 @@
 	height: 50%;
 	justify-content: space-between;
 }
+@media only screen and (max-width: 1250px) {
+	.big{
+		padding-top: 50%;
+		padding-right: 50%;
+	}
+	.small {
+		width: 49%;
+		padding-top: 50%;
+	}
+	.smallimage{
+		width: 49%;
+	}
+}
+@media only screen and (max-width: 760px){
+	.container {
+		flex-direction: column;
+		margin-top: 20px;
+	}
+	.big {
+		width: 100%;
+		padding-top: 80%;
+	}
+	.small {
+		width: 100%;
+		padding-top: 35%;
+		overflow-x: scroll;
+	}
+	.smallimage{
+		width: 35%;
+		.inner{
+			align-items: flex-start;
+			img{
+				width: auto;
+			}
+		}
+	}
+	.inner-content{
+		display: flex;
+		justify-content: center;
+	}
+}
