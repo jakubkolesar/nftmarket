@@ -13,32 +13,29 @@
 	align-items: center;
 }
 .big {
-	border-radius: 15px;
+	height: 100%;
 	width: 39%;
-	padding-top: 39%;
 	position: relative;
-	overflow: hidden;
 }
 .inner {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 	position: absolute;
 	top: 0;
 	left: 0;
 	width: 100%;
 	height: 100%;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
 	img {
 		width: 100%;
 		height: 100%;
 	}
 }
 .small {
-	width: 59%;
 	padding-top: 39%;
-	position: relative;
-	overflow: hidden;
+	width: 59%;
+	position: relative;	
 }
 .inner-content {
 	display: flex;
@@ -48,17 +45,13 @@
 	align-content: space-between;
 }
 .smallimage {
-	width: 32%;
 	padding-top: 32%;
+	width: 32%;
 	position: relative;
 	border-radius: 15px;
-	overflow: hidden;
 }
-.row {
-	flex-shrink: 1;
-	display: flex;
-	height: 50%;
-	justify-content: space-between;
+img {
+	border-radius: 10px;
 }
 @media only screen and (max-width: 1250px) {
 	.big{
