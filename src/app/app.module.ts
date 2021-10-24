@@ -15,6 +15,7 @@ import { CollaborationComponent } from './collaboration/collaboration.component'
 import { AirdropsComponent } from './airdrops/airdrops.component';
 import { FollowComponent } from './follow/follow.component';
 import { FooterComponent } from './footer/footer.component';
+import { FilterComponent } from './filter/filter.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { FooterComponent } from './footer/footer.component';
     CollaborationComponent,
     AirdropsComponent,
     FollowComponent,
-    FooterComponent
+    FooterComponent,
+    FilterComponent
   ],
   imports: [
     BrowserModule,
