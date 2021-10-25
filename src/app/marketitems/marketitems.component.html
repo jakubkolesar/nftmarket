@@ -1,0 +1,32 @@
+<div class="content">
+    <div class="card" *ngFor="let item of items">
+        <div class="cardcontent">
+            <div class="name">
+                <img src="../../assets/images/{{item.pic}}" alt="">
+                <p>{{item.name}}</p>
+            </div>
+            <div class="profilepic">
+                <img src="../../assets/images/{{item.nftphoto}}" alt="">
+            </div>
+            <div class="title">
+                <p>{{item.title}}</p>
+                <img src="../../assets/images/label.png" alt="">
+            </div>
+            <div class="text">
+                <div class="buyit">
+                    <p>Buy it now</p>
+                    <div class="lastrow">
+                        <div class="prices">
+                            <h1>{{item.price}}</h1>
+                            <p>{{item.pricedollars}}</p>
+                        </div>
+                        <div class="likes">
+                            <i class="far fa-heart"></i>
+                            <p>{{item.likecount}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

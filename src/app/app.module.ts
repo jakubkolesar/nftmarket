@@ -18,6 +18,7 @@ import { FollowComponent } from './follow/follow.component';
 import { FooterComponent } from './footer/footer.component';
 import { FilterComponent } from './filter/filter.component';
 import { MessagesComponent } from './messages/messages.component';
+import { MarketitemsComponent } from './marketitems/marketitems.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { MessagesComponent } from './messages/messages.component';
     FooterComponent,
     FilterComponent,
     MessagesComponent,
-    ProfileComponent
+    ProfileComponent,
+    MarketitemsComponent
   ],
   imports: [
     BrowserModule,
