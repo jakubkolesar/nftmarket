@@ -1,3 +1,4 @@
+import { ProfileComponent } from './profile/profile.component';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
@@ -16,6 +17,7 @@ import { AirdropsComponent } from './airdrops/airdrops.component';
 import { FollowComponent } from './follow/follow.component';
 import { FooterComponent } from './footer/footer.component';
 import { FilterComponent } from './filter/filter.component';
+import { MessagesComponent } from './messages/messages.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +33,9 @@ import { FilterComponent } from './filter/filter.component';
     AirdropsComponent,
     FollowComponent,
     FooterComponent,
-    FilterComponent
+    FilterComponent,
+    MessagesComponent,
+    ProfileComponent
   ],
   imports: [
     BrowserModule,
@@ -39,6 +43,8 @@ import { FilterComponent } from './filter/filter.component';
     RouterModule.forRoot([
       {path:'', component: HomeComponent},
       {path:'market', component: MarketComponent},
+      {path:'messages', component: MessagesComponent},
+      {path:'profile', component: ProfileComponent},
     ])
   ],
   providers: [],

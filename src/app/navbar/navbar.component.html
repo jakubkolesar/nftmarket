@@ -10,8 +10,8 @@
         <ul id="navbar" class="menu" [class]="isClicked? 'menu-active':'none'" (click)="hideOnClick()">
                 <li routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }"><a routerLink="">Dashboard</a></li>
                 <li routerLinkActive="active"><a routerLink="/market">Market</a></li>
-                <li><a href="#">Messages</a></li>
-                <li><a href="#">Profile</a></li>
+                <li routerLinkActive="active"><a routerLink="/messages">Messages</a></li>
+                <li routerLinkActive="active"><a routerLink="/profile">Profile</a></li>
         </ul>
         <div class="section">
             <div class="icon searchicon">
