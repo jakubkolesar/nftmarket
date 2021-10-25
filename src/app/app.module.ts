@@ -19,6 +19,8 @@ import { FooterComponent } from './footer/footer.component';
 import { FilterComponent } from './filter/filter.component';
 import { MessagesComponent } from './messages/messages.component';
 import { MarketitemsComponent } from './marketitems/marketitems.component';
+import { DragScrollModule } from 'ngx-drag-scroll';
+import { TopoffersComponent } from './topoffers/topoffers.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +39,8 @@ import { MarketitemsComponent } from './marketitems/marketitems.component';
     FilterComponent,
     MessagesComponent,
     ProfileComponent,
-    MarketitemsComponent
+    MarketitemsComponent,
+    TopoffersComponent
   ],
   imports: [
     BrowserModule,
@@ -47,7 +50,8 @@ import { MarketitemsComponent } from './marketitems/marketitems.component';
       {path:'market', component: MarketComponent},
       {path:'messages', component: MessagesComponent},
       {path:'profile', component: ProfileComponent},
-    ])
+    ]),
+    DragScrollModule
   ],
   providers: [],
   bootstrap: [AppComponent]
