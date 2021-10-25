@@ -10,6 +10,7 @@ import { DragScrollComponent, DragScrollModule } from 'ngx-drag-scroll';
 
 export class TopoffersComponent  {
 
+  
   constructor() { }
 
   items=[
